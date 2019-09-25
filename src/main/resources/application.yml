@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: dev
+
+mybatis: # mybatis 配置
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.xzy.basis.modules.*.po
+  configuration:
+    map-underscore-to-camel-case: true
+
+mapper: # 通用 Mapper 配置
+  identity: MYSQL
+  mappers: com.xzy.basis.core.utils.MyMapper
+  not-empty: false
+
+pagehelper: # 分页插件配置
+  helperDialect: mysql
+  params: count=countSql
+  reasonable: true
+  supportMethodsArguments: true

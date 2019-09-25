@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xzy.basis.modules.system.mapper.LogMapper">
+  <resultMap id="BaseResultMap" type="com.xzy.basis.modules.system.po.Log">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="req_method" jdbcType="VARCHAR" property="reqMethod" />
+    <result column="exec_method" jdbcType="VARCHAR" property="execMethod" />
+    <result column="exec_time" jdbcType="BIGINT" property="execTime" />
+    <result column="exec_desc" jdbcType="VARCHAR" property="execDesc" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="req_uri" jdbcType="LONGVARCHAR" property="reqUri" />
+    <result column="args" jdbcType="LONGVARCHAR" property="args" />
+    <result column="return_val" jdbcType="LONGVARCHAR" property="returnVal" />
+  </resultMap>
+</mapper>
